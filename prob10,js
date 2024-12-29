@@ -1,0 +1,15 @@
+const result = [1, 2, 7,3,3,5,55,3,332, 3, 4, 4, 5];
+
+const obj={};
+for(i=0;i<result.length;i++){
+    if(obj[result[i]]===undefined){
+        obj[result[i]]=1
+    }
+}
+const arr=[]
+for(key in obj){
+    arr.push(key)
+}
+
+console.log(arr)
+
